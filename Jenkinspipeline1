@@ -5,7 +5,7 @@ stages
 {
 stage('clone')
 {
-stpes
+steps
 {
 git 'https://github.com/nageshwari-09/demo2_rep.git'
 }
@@ -13,14 +13,14 @@ git 'https://github.com/nageshwari-09/demo2_rep.git'
 stage('build')
 {
 steps{
-sh 'javac hello.java'
+sh 'javac Hello.java'
 }
 }
 stage('run')
 {
 steps
 {
-sh 'java hello'
+sh 'javac Hello.java'
 }
 }
 }
